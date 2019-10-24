@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="imagem/png" href="./images/ico.png"/>
-    <title>BlockChain</title>
-    
+    <title>TechChain</title>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -16,8 +15,8 @@
         <a id="myBtn" class="navbar-brand" href="./index.html"> 
             <img src="./images/logo-branco.png" alt="BlockChain" height="40vh">
         </a>
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
-            <span class="navbar-toggler-icon ml-auto" height="1vh"></span>
+        <button class="navbar-toggler" type="button" onclick="menu()" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon ml-auto" height="1vh" ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto no-margin">
@@ -28,7 +27,7 @@
                     <a id="linkDois" class="nav-link mx-4" href="./aplicabilidade.html">Aplicabilidade</a>
                 </li>
                 <li class="nav-item">
-                    <a id="linkTres" class="nav-link  mx-4" href="./adesao.html">Adesão</a>
+                    <a id="linkTres" class="nav-link  mx-4" href="./ethereum.html">Ethereum</a>
                 </li>
             </ul> 
         </div>
@@ -48,63 +47,99 @@
             </div>
         </div>
     </div>
-    <div id="funcionamento" class=" shadow container-black text-center p-5  " >
-        <div class="row justify-content-center my-4"  > 
+    <div id="funcionamento" class=" container-black p-5  " >
+        <div class="row justify-content-center container-black shadow-custom p-5"  > 
+                <div class="row container-gray text-center  my-4  " > 
             <div class="col-sm  py-4 " >
                 <h2 class="text-center">O que é BlockChain?</h2> 
                 <p class="">É um sistema de rastreamento digital.</p>
             </div>
-            <div class="mx-2  py-4" >
-            </div>
+            
             <div class="col-sm  py-4" >
                 <h2 class="text-center">Como Funciona?</h2>  
                 <p class="">Pedaços de código são gerados e conectados como um <b>bloco</b> de informações. </p>
             </div>
+            </div>
         </div>
     </div>
-    <div class=" debug text-center p-5">
-        <div class="row container-gray text-center p-none shadow-custom" >  
-            <div class="col-sm">
+    <div class="debug text-center p-5">
+        <div class="row container-gray text-center p-none shadow-custom py-4" >  
+            <div class="col-sm py-4">
                 <h2 class="text-center">1. Dados</h2>  
                 <p class="">Pedaços de código são gerados e conectados em uma <b>corrente de blocos</b> ordenada. 
                 </p>
             </div>
-            <div class="col-sm">
+            <div class="col-sm py-4">
                 <h2 class="text-center">2. Ledger</h2>  
                 <p class="">O Ledger é composto por blocos de dados que são autenticados em tempo real para evitar fraude.  </p>
             </div>
-            <div class="col-sm">
+            <div class="col-sm py-4">
                 <h2 class="text-center">3. Criptografia e P2P</h2>  
                 <p class="">Todos os computadores de uma rede Peer to Peer guardam uma cópia do Ledger para autenticação compartilhada em tempo real.</p>
             </div>
         </div>
     </div>
-    <div id="aplicabilidade" class="container-black p-5">
-        <div class="row justify-content-center container-black shadow-custom p-5 " style="display: block!important"> 
-            <h6 class="text-center">Aplicabilidade</h6>
-                <div class="col-sm  py-4  my-4" >
-                    <div class="text-center">
-                        <h4 class="py-3">Serviços Financeiros</h4> 
-                        <img src="./images/money.png" alt="" height="100vh"> <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique omnis culpa, unde, facilis aliquam repudiandae, ea voluptatum dolorum facere iure quam est explicabo fugit nostrum soluta. Voluptatum suscipit molestias eaque, ad blanditiis labore. Ipsam dignissimos fuga quia tempora repellat nihil aut voluptates suscipit autem minus. Odit libero ullam eveniet.</p>
-                    </div>
-                    <div class="text-center">
-                    <img src="./images/contract.png" alt="" height="100vh">
-                    <h4 class="text-center py-3">Registros</h4> 
-                    <img src="./images/voting-urn.png" alt="" height="100vh">
-                    <h4 class="text-center py-3">Eleições</h4> 
+
+    <div class="container-black p-5">
+            <div class="row justify-content-center container-black shadow-custom p-5 " style="display: block!important"> 
+                <div class="row container-gray text-center" >              
+                    <div class="col-sm">
+                        <h2 class="text-center">Ethereum </h2>  
+                        <img src="./images/ethereum.png" alt="" height="100vh" class="my-4"> 
+                        <p class="">
+                        O Ethereum é uma plataforma descentralizada que, como outras blockchains, tem uma criptomoeda nativa chamada <b>Ether (ETH)</b>, uma espécie de dinheiro virtual como o Bitcoin.
+                        </p>
+                    </div>   
+                </div>          
+            </div>
+        <div class="shadow container-black text-center" >
+                <div class="row justify-content-center my-4"> 
+                    <div class="py-4 padding-border">
+                        <h2 class="text-center">Quais são os benefícios do uso de Blockchain?</h2> 
+                        <div class="text-center py-3" >
+                            <h4 class="py-3">Registros Transparentes e Imutáveis</h4> 
+                            <img src="./images/lock.png" alt="" height="100vh">
+                            <p class="py-3">Imagine que temos várias empresas e instituições trabalhando juntas. Eles podem usar um sistema blockchain para registrar dados sobre a localização e propriedade de seus materiais e produtos. <br>
+                            Como os registros de dados não podem ser alterados, <b>não haveria dúvida</b> de quem era a parte responsável se algo desse errado.
+                            </p>
+                                
+                            <h4 class="py-3">Cortando Gastos</h4> 
+                            <img src="./images/money-2.png" alt="" height="100vh">
+                            <p class="py-3">Muito <b>desperdício</b> ocorre devido às ineficiências na rede da cadeia de suprimentos. <br>
+                            O rastreamento aprimorado e a transparência dos dados ajudam as empresas a 
+                            identificar desperdícios para que possam implementar medidas de economia de custos.
+                            </p>
+
+                            <h4 class="py-3">Criando Dados Interoperáveis</h4> 
+                            <img src="./images/verifydata.png" alt="" height="100vh">
+                            <p class="py-3">As cadeias de bloco mantêm um repositório de dados exclusivo e transparente que contribui para adicionar novos dados e verificar sua integridade. <br> 
+                            Isso significa que todas as informações armazenadas em uma blockchain são <b>acessíveis a todas as partes envolvidas</b>, para que uma empresa possa verificar facilmente quais informações estão sendo transmitidas pela outra.</p>
+
+                            <h4 class="py-3">Substituindo EDI</h4> 
+                            <img src="./images/datint.png" alt="" height="100vh">
+                            <p class="py-3">Muitas empresas confiam nos sistemas <b>EDI (Electronic Data Interchange)</b> para enviar informações comerciais entre si. No entanto, esses dados costumam sair em lotes, e não em tempo real. <br>
+                            Com o blockchain, as informações são <b>atualizadas regularmente</b> e podem ser <b>rapidamente distribuídas</b> a todas as entidades envolvidas.
+                            </p>
+                                
+                            <h4 class="py-3">Compartilhamento e Acordos digitais</h4> 
+                            <img src="./images/change.png" alt="" height="100vh">
+                            <p class="py-3">Uma única versão da verdade é importante para qualquer tipo de <b>compartilhamento de documentos</b>.<br>
+                            A documentação e os contratos necessários podem ser associados a <b>transações blockchain e assinaturas digitais</b>, para que todos os participantes tenham acesso à versão original dos contratos e documentos. O blockchain garante imutabilidade de documentos e os acordos só podem ser alterados se todas as partes envolvidas chegarem a um consenso. <br> <br> Dessa forma, as organizações podem gastar menos tempo com seus advogados examinando a papelada ou a mesa de negociações e mais tempo desenvolvendo novos produtos ou promovendo o crescimento dos negócios.
+                            </p>
+                        </div> 
                     </div>
                 </div>
         </div>
     </div>
-<div id="quote" class="text-center m-0 p-5">
-    <blockquote id="blockquote" class="blockquote text-center ">
-        <p class="mb-0">"O blockchain é um livro digital incorruptível de transações econômicas que pode ser programado para registrar não apenas transações financeiras, mas praticamente tudo de valor."</p>
-        <footer class="blockquote-footer"> <cite title="Source Title">Don & Alex Tapscott</cite></footer>
-      </blockquote>
-</div>
-<div id="adesao" class="container-fluid text-center container-black">
-</div>
+    <div class="text-center m-0 p-5">
+        <blockquote id="blockquote" class="blockquote text-center ">
+            <p class="mb-0">
+            "O blockchain é um livro digital incorruptível de transações econômicas que pode ser programado para registrar não apenas transações financeiras, mas praticamente tudo de valor."
+            </p>
+            <footer class="blockquote-footer"> <cite title="Source Title">Don & Alex Tapscott</cite></footer>
+        </blockquote>
+    </div>
+
     <div id="footer" class="footer-container ">
         <div class="row mx-0 text-center">
             <div class="col-sm">

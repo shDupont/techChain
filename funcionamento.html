@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="imagem/png" href="./images/ico.png "/>
-    <title>BlockChain</title>
-    
+    <title>TechChain</title>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -16,7 +15,7 @@
         <a id="myBtn" class="navbar-brand" href="./index.html"> 
             <img src="./images/logo-branco.png" alt="BlockChain" height="40vh">
         </a>
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <button class="navbar-toggler" type="button" onclick="menu()"data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon ml-auto" height="1vh"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,27 +27,70 @@
                     <a id="linkDois" class="nav-link mx-4" href="./aplicabilidade.html">Aplicabilidade</a>
                 </li>
                 <li class="nav-item">
-                    <a id="linkTres" class="nav-link  mx-4" href="./adesao.html">Adesão</a>
+                    <a id="linkTres" class="nav-link  mx-4" href="./ethereum.html">Ethereum</a>
                 </li>
             </ul> 
         </div>
     </nav>
-    <div class="padding-top1 row mx-0 ">
+    <div class="padding-top3 row mx-0 ">
     </div>
-    <div id="aplicabilidade" class="container-black p-5">
-        <div class="row justify-content-center container-black shadow-custom p-5 " style="display: block!important"> 
-            <h6 class="">Funcionamento</h6>
-                <div class="col-sm  py-4  my-4" >
-                    <div class="text-center">
-                        <h4 class="py-3">Serviços Financeiros</h4> 
-                        <img src="./images/money.png" alt="" height="100vh"> <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique omnis culpa, unde, facilis aliquam repudiandae, ea voluptatum dolorum facere iure quam est explicabo fugit nostrum soluta. Voluptatum suscipit molestias eaque, ad blanditiis labore. Ipsam dignissimos fuga quia tempora repellat nihil aut voluptates suscipit autem minus. Odit libero ullam eveniet.</p>
+    <div class="container-black p-5 ">
+        <div class="row justify-content-center shadow-custom p-5 text-center "> 
+            <div>
+                    <h6 class="text-center">Funcionamento</h6>
+                    <img src="./images/private-blockchain.png" alt="" height="100vh" class="my-4">
+                    <h4 class="py-3">Blockchain: um livro digital descentralizado que é organizado em blocos, de forma cronológica, e protegido por criptografia </h4> 
+            </div>
+        </div>
+        <div class="shadow container-black text-center " >
+                <div class="row justify-content-center my-4 padding-border"> 
+                    <div class="py-4">
+                        <div class="text-center py-3" >
+                                <h2 class="text-center">Onde é aplicável?</h2>  
+                                <p>Apesar do Blockchain associar-se ao dinheiro, pode ser utilizado fora da área de comércio</p>
+                        </div>
                     </div>
                 </div>
         </div>
+        <div class="debug text-center">
+            <div class="row container-gray text-center p-none shadow-custom my-4 p-5" >  
+                <div class="col-sm">
+                    <h2 class="text-center">Blockchain: Criptomoedas</h2>  
+                    <img src="./images/quadrado.png" alt="" height="60vh" class="my-4">
+                    <p class="padding-border">No contexto de criptomoedas, uma Blockchain consiste em uma cadeia estável de blocos, cada um armazenando uma lista de <b>transações confirmadas anteriormente</b>. <br>
+                        Uma rede Blockchain é mantida por uma infinidade de computadores espalhados pelo mundo,
+                        cada um deles mantém uma cópia dos dados e se comunica um com o outro para garantir que todos estejam na mesma página. 
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="shadow container-black text-center " >
+                <div class="row justify-content-center my-4"  > 
+                    <div class="col-sm  py-4 " >
+                        <h2 class="text-center">BlockChain: Resistente à Censura</h2> 
+                        <p class="justify-content-center ">As transações blockchain ocorrem dentro de uma rede global ponto a ponto (P2P) e é isso que torna o Bitcoin uma <b>moeda digital descentralizada</b>, sem fronteiras, resistente à censura.
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="debug text-center">
+                <div class="row container-gray text-center p-none shadow-custom my-4 p-5" >  
+                    <div class="col-sm">
+                        <h2 class="text-center">Mineração e Algoritmos Hash</h2>  
+                        <img src="./images/bitmining.png" alt="" height="100vh" class="my-4">
+                        <p class="padding-border">Uma parte central de quase toda blockchain é <b>o processo de mineração</b>, que depende de <b>algoritmos de hash</b>. <br>
+                            O Bitcoin, por exemplo, usa o algoritmo SHA-256 <i>(algoritmo de hash seguro 256 bits)</i>. Ele recebe uma entrada de qualquer comprimento e gera uma saída que sempre terá o mesmo comprimento. 
+                            A saída produzida é chamada de <b>hash</b> e, nesse caso, é sempre composta de 64 caracteres (256 bits).
+                            <br>
+                        </p>   
+                        <p class="padding-border my-4"> Desta forma, a mesma entrada <b>resultará na mesma saída</b>, não importa quantas vezes o processo seja repetido. Mas, se uma pequena alteração for feita na entrada, a saída mudará completamente. <br>
+                                Ser uma função unidirecional significa que é quase impossível calcular qual foi a entrada da saída. Só se pode adivinhar qual foi a entrada, mas as chances de acertar são extremamente baixas. 
+                                Esta é uma das razões pelas quais o blockchain do Bitcoin é seguro.
+                        </p>
+                    </div>
+                </div>
+            </div>
     </div>
-<div id="adesao" class="container-fluid text-center container-black">
-</div>
     <div id="footer" class="footer-container ">
         <div class="row mx-0 text-center">
             <div class="col-sm">
